@@ -33,13 +33,10 @@ $(TARGET).dvi: $(DEPEND_TEX_JIS)
 
 %.dvi: %.tex
 
-%.jis.tex: %.tex
-	nkf -j $< > $@
-
 %.bb: $(DEPEND).pdf
 	ebb $<
 
-%.dvi: %.jis.tex 
+%.dvi: %.tex 
 	$(PLATEX) -jobname=$(basename $@) $<
 
 %.ps: %.dvi 
