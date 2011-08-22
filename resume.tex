@@ -1,7 +1,10 @@
 % LaTeX resume using res.cls
 \documentclass[margin]{res}
-\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
 %\usepackage{newcent}   % uses new century schoolbook postscript font 
+\usepackage{pslatex} % Times New Roman
+%\renewcommand{\rmdefault}{phv} % Arial
+%\renewcommand{\sfdefault}{phv} % Arial
 \setlength{\textwidth}{5.1in} % set width of text portion
 
 \begin{document}
@@ -12,71 +15,85 @@
  \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
 % address begins here
 % Again, the address lines must be centered over entire width of resume:
- \moveleft.5\hoffset\centerline{2-43-3-502 Sendagi Bunkyo-ku Tokyo Japan}
- \moveleft.5\hoffset\centerline{mobile: +81-90-9663-8160}
- \moveleft.5\hoffset\centerline{email: yusmi@is.s.u-tokyo.ac.jp}
- \moveleft.5\hoffset\centerline{blog: http://yusmi.org/}
+ \moveleft.5\hoffset\centerline{2-43-3 Sendagi Bunkyo-ku \#502, Tokyo, Japan}
+ \moveleft.5\hoffset\centerline{+8190-9663-8160}
+ \moveleft.5\hoffset\centerline{yusmi@is.s.u-tokyo.ac.jp}
+ \moveleft.5\hoffset\centerline{http://yusmi.org/}
 
 
 \begin{resume}
  
 \section{Research \\ Interests}
-Named entity recognition, Recommendation, Semantic search.\\
+Natural Language Processing, Machine Learning, Semantics.\\
 
 \section{Education}
-\textbf{Graduate School of Information Science and Technology, Department of Computer Science, University of Tokyo, Tokyo, Japan, current} \\
-Natural language processing \\
-Akiko Aizawa Lab. \\
-\textbf{B.A, Information Science, University of Tokyo, Tokyo, Japan, 2011} \\
-Natural language processing \\
-Jun'ichi Tsujii Lab.\\
+\textbf{M.S., Computer Science} \hfill April 2011 -- current\\
+University of Tokyo, Tokyo, Japan\\
+Supervisor: Akiko Aizawa\\
+Expected completion: March 2013
+
+\textbf{B.S., Information Science} \hfill April 2006 -- March 2011\\
+University of Tokyo, Tokyo, Japan\\
 Thesis: \textit{Named Entity Recognition Trained on Automatically Created Huge Data}\\
+Supervisor: Jun'ichi Tsujii\\
+
+\section{Research \\ Experience}
+\textbf{Research Intern}, Mentor: Satoshi Sekine \hfill August 2011 -- October 2011\\
+Rakuten Institute of Technology, New York, NY, USA\\
+Work on attribute-value pair extraction from product descriptions. 
+
+\textbf{Research Assistant}, Supervisor: Akiko Aizawa \hfill May 2011 -- July 2011\\
+National Institute of of Informatics, Tokyo, Japan\\
+Work on mathematical expression extraction from papers.
+
+\textbf{Directed Research}, Supervisor: Jun'ichi Tsujii \hfill October 2011 -- March 2011\\
+University of Tokyo, Tokyo, Japan\\
+Work on gene and protein names recognition from biomedicine text.\\
+
+\section{Publications}
+\textbf{Yu Usami}, Han-Cheol Cho, Naoaki Okazaki, and Jun'ichi Tsujii. Automatic Acquisition of Huge Training Data for Bio-Medical Named Entity Recognition. 
+In \textit{Proceedings of BioNLP 2011 Workshop}, pages 65-73, Portland, Oregon, USA, June 2011.
+
+\textbf{Yu Usami}, Han-Cheol Cho, Naoaki Okazaki, and Jun'ichi Tsujii. Automatic Acquisition of Huge Training Data for Named Entity Recognition.
+\textit{Technical Report (Information Processing Society of Japan, SIGNL201)}. pages 1-8, May 2011. (in Japanese).
+
+\textbf{Yu Usami}, Han-Cheol Cho, Naoaki Okazaki, and Jun'ichi Tsujii. Named Entity Recognition Trained on Automatically Created Huge Data.
+In \textit{Proceedings of the 17th Japan Natural Language Processing Conference}. March 2011. (in Japanese).\\
 
 \section{Work \\ Experience}
-\textbf{Internship Engineer, DeNA Co.,Ltd.} \hfill September 2010 - current\\
-Develop social game apps for smartphone (Android and iOS) on JavaScript-based framework for game development (ngCore).\\
-Develop debugging support tool for team members.
+\textbf{Part-time Engineer} \hfill September 2010 -- July 2011\\
+DeNA Co. Ltd., Tokyo, Japan\\
+Work on social game applications and debugging tools development.
 
-\textbf{Part-time Barista, Starbucks Coffee Japan, Ltd.} \hfill May 2008 - current\\
-Work as barista and cashier. Trained as OJT trainer. 
-
-\textbf{Part-time Engineer, Realglobe Inc.} \hfill November 2008 - April 2010\\
-Develop web applications with Rails.\\
-For example, blog-like-system or portal site for private shops.
-
-\section{Publication}
-Yu Usami, Han-Cheol Cho, Naoaki Okazaki, Jun'ichi Tsujii. \textbf{Automatic Acquisition of Huge Training Data for Bio-Medical Named Entity Recognition}. 
-2011. In Proceedings of Natural Language Processing in Biomedicine (BioNLP) ACL-HLT 2011 Workshop. To Appear.
-
-\section{Honors}
-\textbf{YAMANO Big Band Jazz Contest 2008 Jazz award} \\
-This contest is the most famous national contest for college big bands.\\
-Our big band 'Jazz Junk Workshop' won this award. \\
-I was a member of this band as baritone sax player.
+\textbf{Part-time Engineer} \hfill November 2008 -- April 2010\\
+Realglobe Inc., Tokyo, Japan\\
+Work on web applications development.\\
 
 \section{Activities}
-\textbf{Reading Group:} {\sl Speech and Language Processing, Daniel Jurafsky and James H. Martin} \hfill October 2010 - December 2010  \\
-Organized weekly reading group. 
+\textbf{Co-Organizer:} {\sl Speech and Language Processing (Daniel Jurafsky and James H. Martin)} Reading Group \hfill October 2010 -- December 2010
 
-\textbf{Reading Group:} {\sl Pattern Recognition and Machine Learning, Christopher M. Bishop} \\ \hfill April 2011 - current\\
-Organize weekly reading group. 
+\textbf{Organizer:} {\sl Pattern Recognition and Machine Learning (Christopher M. Bishop)} Reading Group \hfill April 2011 -- current
 
-\textbf{Reading Group:} {\sl Foundations of Statistical Natural Language Processing, Chris Manning and Hinrich Schütze} \hfill April 2011 - current\\
-Join weekly reading group.
+\textbf{Co-Organizer:} {\sl Foundations of Statistical Natural Language Processing (Chris Manning and Hinrich Schütze)} Reading Group \hfill April 2011 -- June 2011\\
+
 
 \section{Computer \\ Skills}
-\textbf{Languages:} C/C++, Python, Ruby, JavaScript, Perl, OCaml, Scheme \\
-\textbf{Platforms:} CentOS, Linux, Mac OS X 
+\textit{Programming Languages:} C/C++, Python, JavaScript, Clojure, Ruby, Java, Perl \\
+\textit{Platforms:} CentOS, Linux, Mac OS X\\
 
-\section{Language \\ Skills}
-\textbf{English:} TOEIC: 750 (October 2010), TOEFL: 72 (May 2010) \\
+\section{Languages}
+Native Japanese speaker.\\
+Good at English. TOEIC score 750 (October 2010), and TOEFL score 72 (May 2010). \\
 
 \section{References} 
 Dr. Jun'ichi Tsujii \\
-Microsoft Research Asia, Beijing, China\\
-\\
+Microsoft Research Asia, Beijing, China
+
 Prof. Akiko Aizawa \\
-National Institute of Informatics, Tokyo, Japan\\
+National Institute of Informatics, Tokyo, Japan
+
+Prof. Satoshi Sekine \\
+New York University, New York, NY, USA
 \end{resume}
 \end{document}
 
