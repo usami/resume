@@ -200,7 +200,7 @@
 \ExecuteOptions{overlapped,centered}
 \ProcessOptions\relax
 
-\nofiles	     % resume's don't need .aux files
+%\nofiles	     % resume's don't need .aux files
 
 
 \newtoks\tabular@text		    % holds the current list being processed
@@ -801,3 +801,23 @@
 
 \let\section\@@section
 
+% remove the asterisk appears in a section part
+\makeatletter
+\renewenvironment{thebibliography}[1]
+{\list{\@biblabel{\@arabic\c@enumiv}}%
+  {\settowidth\labelwidth{\@biblabel{#1}}%
+    \leftmargin\labelwidth
+      \advance\leftmargin\labelsep
+      \@openbib@code
+      \usecounter{enumiv}%
+      \let\p@enumiv\@empty
+      \renewcommand\theenumiv{\@arabic\c@enumiv}}%
+      \sloppy
+      \clubpenalty4000
+      \@clubpenalty \clubpenalty
+      \widowpenalty4000%
+      \sfcode`\.\@m}
+{\def\@noitemerr
+  {\@latex@warning{Empty `thebibliography' environment}}%
+  \endlist}
+  \makeatother

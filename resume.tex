@@ -3,6 +3,7 @@
 %\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
 %\usepackage{newcent}   % uses new century schoolbook postscript font 
 \usepackage{pslatex} % Times New Roman
+\usepackage{url}
 %\renewcommand{\rmdefault}{phv} % Arial
 %\renewcommand{\sfdefault}{phv} % Arial
 \setlength{\textwidth}{5.1in} % set width of text portion
@@ -59,21 +60,10 @@ The University of Tokyo, Tokyo, Japan\\
 Work on gene and protein names recognition in biomedicine text.\\
 
 \section{Publications}
-\textbf{Yu Usami}, Masato Hagiwara, and Satoshi Sekine. Attribute-Value Extraction from Product Descriptions.
-In \textit{Proceedings of the 4th Rakuten Research and Development Symposium}, Tokyo, Japan, November 2011. (in Japanese).
-\\http://rit.rakuten.co.jp/conf/rrds4/papers/RRDS4-007.pdf
-
-\textbf{Yu Usami}, Han-Cheol Cho, Naoaki Okazaki, and Jun'ichi Tsujii. Automatic Acquisition of Huge Training Data for Bio-Medical Named Entity Recognition. 
-In \textit{Proceedings of BioNLP 2011 Workshop}, ACL-HLT 2011, pages 65-73, Portland, Oregon, USA, June 2011.
-\\http://aclweb.org/anthology-new/W/W11/W11-0208.pdf
-
-\textbf{Yu Usami}, Han-Cheol Cho, Naoaki Okazaki, and Jun'ichi Tsujii. Automatic Acquisition of Huge Training Data for Named Entity Recognition.
-\textit{Technical Report}, Information Processing Society of Japan, SIGNL201, pages 1-8, May 2011. (in Japanese).
-\\http://goo.gl/Yp2iu
-
-\textbf{Yu Usami}, Han-Cheol Cho, Naoaki Okazaki, and Jun'ichi Tsujii. Named Entity Recognition Trained on Automatically Created Huge Data.
-In \textit{Proceedings of the 17th Natural Language Processing Conference}, Aichi, Japan, March 2011. (in Japanese).
-\\http://yusmi.org/publications/NLP.pdf\\
+\renewcommand\refname{}
+\nocite{Usami2012, Usami2011-rrds, Usami2011-BioNLP, Usami2011-SIGNL, Usami2011}
+\bibliographystyle{unsrt}
+\bibliography{mybib}
 
 \section{Work \\ Experience}
 \textbf{Part-time Engineer} \hfill September 2010 -- July 2011\\
