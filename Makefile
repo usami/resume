@@ -36,3 +36,7 @@ spell:
 .PHONY: clean
 clean:
 	$(RM) *.aux *.toc *.log *.dvi $(TARGET).pdf *.ps *.bbl *.blg
+
+.PHONY: upload
+upload: $(TARGET).pdf
+	scp $(TARGET).pdf vps:/srv/www/static/
