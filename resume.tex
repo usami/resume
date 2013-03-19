@@ -1,110 +1,78 @@
 % LaTeX resume using res.cls
-\documentclass[12pt]{res}
-%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
-%\usepackage{newcent}   % uses new century schoolbook postscript font 
+\documentclass[10pt]{res}
 \usepackage{pslatex} % Times New Roman
 \usepackage{hyperref}
 %\renewcommand{\rmdefault}{phv} % Arial
 %\renewcommand{\sfdefault}{phv} % Arial
 \newsectionwidth{0pt}
-%\setlength{\textwidth}{5.1in} % set width of text portion
 \newcommand{\sectionline}[1][0.5pt]{\rule{\resumewidth}{#1}\\}
 
 \begin{document}
 
 % Center the name over the entire width of resume:
- \moveleft.5\hoffset\centerline{\large Yu Usami}
+\moveleft.5\hoffset\centerline{\large \textbf{Yu Usami}}
 % Draw a horizontal line the whole width of resume:
- \moveleft\hoffset\vbox{\hrule width\resumewidth}\smallskip
+\moveleft\hoffset\vbox{\hrule width\resumewidth}\smallskip
 % address begins here
 % Again, the address lines must be centered over entire width of resume:
- \moveright0.45\resumewidth\leftline{2-43-3 Sendagi, Bunkyo-ku, \#502}
- \moveright0.45\resumewidth\leftline{Tokyo, Japan 113-0022}
- \moveleft.5\hoffset\leftline{}
- \moveright0.45\resumewidth\leftline{email: {\tt yu2118@columbia.edu}}
- \moveright0.45\resumewidth\leftline{mobile: +81 9096638160}
- \moveright0.45\resumewidth\leftline{web: {\tt http://yusmi.org}}
+\centerline{601 West 156th Street Apt. 64A, New York, NY 10032 $\diamond$ yu2118@columbia.edu $\diamond$ 917-509-5717}
 
 \begin{resume}
- 
+
 \section{\uppercase{Education}}
-\sectionline
-\textbf{Master of Science, Computer Science}\\
-Columbia University, New York\\
-Expected December 2013
+\textbf{Columbia University, The Fu Foundation School of Engineering and Applied Science}, New York, NY\\
+Master of Science, Computer Science \hfill Expected February 2014\\
+Coursework: Natural Language Processing, Artificial Intelligence, Computer Architecture, Computational Learning Theory\\
+%\textbf{Master of Science, Computer Science}\\
+%University of Tokyo, Tokyo, Japan\\
+%Earned 8 credits toward Master of Science in Computer Science, March 2011 - August 2012
+\textbf{University of Tokyo, School of Science}, Tokyo, Japan\\
+Bachelor of Science, Information Science \hfill March 2011\\
+Thesis: Named Entity Recognition Trained on Automatically Created Huge Data
+%Advisor: Jun'ichi Tsujii
+\section{\uppercase{Honor}}
+\textbf{Nakajima Foundation Scholarship} \hfill September 2012 -- December 2013
 
-\textbf{Master of Science, Computer Science}\\
-University of Tokyo, Tokyo, Japan\\
-Earned 8 credits toward Master of Science in Computer Science, March 2011 - August 2012
+\section{\uppercase{Relevant Experience}}
+\textbf{Rakuten Institute of Technology}, Tokyo, Japan \hfill November 2011 -- June 2012\\
+\textit{Assistant Researcher}
+%Advisor: Keiji Shinzato, Satoshi Sekine\\
+\begin{itemize}
+  \item Implemented an unsupervised attribute-value pattern extractor for e-commerce product descriptions varying over 50,000 categories.
+  \item Analyzed and evaluated the performance of the attribute-value pattern extractor.
+  \item Collaborated with colleagues to develop a part-of-speech tagging software.
+\end{itemize}
+\textbf{Rakuten Institute of Technology}, New York, NY \hfill August 2011 -- October 2011\\
+\textit{Research Intern}
+%Advisor: Satoshi Sekine\\
+\begin{itemize}
+  \item Implemented an attribute-value term extractor for product descriptions.
+  \item Proposed and evaluated various methods to extract attribute-value terms.
+\end{itemize}
+%\section{\uppercase{Work Experience}}
+\textbf{DeNA Co. Ltd.}, Tokyo, Japan \hfill September 2010 -- July 2011\\
+\textit{Part-time Software Engineer}
+\begin{itemize}
+  \item Contributed to the social game development team by developing debug tools and libraries.
+  \item Designed a software architecture which is suitable for developing social games with ngCore framework.
+  \item Studied and reported on different kinds of new frameworks for multi-platform software development.
+\end{itemize}
+\textbf{Realglobe Inc.}, Tokyo, Japan \hfill November 2008 -- April 2010\\
+\textit{Part-time Software Engineer}
+\begin{itemize}
+  \item Developed scalable web applications with Ruby on Rails.
+\end{itemize}
 
-\textbf{University of Tokyo, Tokyo, Japan}\\
-Bachelor of Science in Information Science, March 2011\\
-Dissertation: \textit{Named Entity Recognition Trained on Automatically Created Huge Data}\\
-Advisor: Jun'ichi Tsujii\\
+\section{\uppercase{Publication}}
+Yu Usami, Han-Cheol Cho, Naoaki Okazaki, and Jun'ichi Tsujii. Automatic Acquisition of Huge Training Data for Named Entity Recognition. \textit{Information Processing Society of Japan, SIGNL201 Technical Report, Vol. 11}, pages 1-–8, 2011.
 
-\section{\uppercase{Honors and Awards}}
-\sectionline
-\textbf{Nakajima Foundation Scholarship}, 2012 -- 2014\\
+\section{\uppercase{Conference Papers (Selected)}}
+Yu Usami, Masato Hagiwara, and Satoshi Sekine. Attribute Value Tagging for Product Descriptions. In \textit{Proceedings of the 18th Natural Language Processing Conference in Japan}, pages 191--194, 2012.\\
+Yu Usami, Han-Cheol Cho, Naoaki Okazaki, and Jun'ichi Tsujii. Automatic Acquisition of Huge Training Data for Bio-Medical Named Entity Recognition. In \textit{Proceedings of BioNLP ACL-HLT 2011 Workshop}, pages 65--73, 2011.
 
-\section{\uppercase{Publications}}
-\sectionline
-\renewcommand\refname{}
-\nocite{Usami2012, Usami2011-rrds, Usami2011-BioNLP, Usami2011-SIGNL, Usami2011}
-\bibliographystyle{unsrt}
-\bibliography{mybib}
-
-\section{\uppercase{Research Experience}}
-\sectionline
-\textbf{Research Internship}, Rakuten Institute of Technology, New York, August 2011 -- October 2011\\
-Advisor: Satoshi Sekine\\
-Worked on attribute value extraction from product descriptions. 
-
-\textbf{Research Assistant}, National Institute of of Informatics, Tokyo, Japan, May 2011 -- July 2011\\
-Advisor: Akiko Aizawa\\
-Worked on mathematical expression extraction from research papers.
-
-\textbf{Undergraduate Research}, The University of Tokyo, Tokyo, Japan, October 2011 -- March 2011\\
-Advisor: Jun'ichi Tsujii\\
-Work on gene and protein names recognition in biomedicine text.\\
-
-\section{\uppercase{Work Experience}}
-\sectionline
-\textbf{Assistant Researcher}, Rakuten Institute of Technology, Tokyo, Japan, November 2011 -- current\\
-Mentor: Keiji Shinzato, Satoshi Sekine
-
-\textbf{Part-time Engineer}, DeNA Co. Ltd., Tokyo, Japan, September 2010 -- July 2011
-
-\textbf{Part-time Engineer}, Realglobe Inc., Tokyo, Japan, November 2008 -- April 2010\\
-
-\section{\uppercase{Activities}}
-\sectionline
-\textbf{Co-Organizer}, Reading Group, April 2011 -- June 2011\\
-Text: {\sl Foundations of Statistical Natural Language Processing (Chris Manning and Hinrich Sch\"{u}tze)}
-
-\textbf{Co-Organizer},  Reading Group, October 2010 -- December 2010\\
-Text: {\sl Speech and Language Processing (Daniel Jurafsky and James H. Martin)}\\
-
-\section{\uppercase{Languages}}
-\sectionline
-\textbf{Japanese}, Native speaker
-
-\textbf{English}, Fluent speaker\\
-TOEIC 900 (May 2012), TOEFL 81 (November 2011) \\
-
-\section{\uppercase{References}}
-\sectionline
-Dr. Jun'ichi Tsujii \\
-Microsoft Research Asia, Beijing, China\\
-\texttt{jtsujii@microsoft.com}
-
-Prof. Akiko Aizawa \\
-The University of Tokyo, Tokyo, Japan\\
-National Institute of Informatics, Tokyo, Japan\\
-\texttt{aizawa@nii.ac.jp}
-
-Prof. Satoshi Sekine \\
-New York University, New York\\
-\texttt{sekine@cs.nyu.edu}
+\section{\uppercase{Skills}}
+Computer: Python, C, C++, Java, SQL, Lisp, Ruby, JavaScript, Perl, Hadoop MapReduce, Ruby on Rails, Mac OS X.\\
+Language: Native in Japanese.
 
 \end{resume}
 \end{document}
